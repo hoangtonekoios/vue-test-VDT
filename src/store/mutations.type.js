@@ -11,3 +11,6 @@ export const TAG_ADD = "addTag";
 export const TAG_REMOVE = "removeTag";
 export const UPDATE_ARTICLE_IN_LIST = "updateArticleInList";
 export const RESET_STATE = "resetModuleState";
+export const SET_WALLET_ACCOUNT = "setWalletAccount";
+export const SET_WALLET_NAME = "setWalletName";
+export const SET_WALLET_CHAIN_ID = "setWalletChainId";
