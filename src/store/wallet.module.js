@@ -1,4 +1,4 @@
-import { DISCONNECT_WALLET, SET_WALLET } from "./actions.type";
+import { DISCONNECT_WALLET, SET_WALLET, SET_CHAIN_ID } from "./actions.type";
 import {
   SET_WALLET_ACCOUNT,
   SET_WALLET_NAME,
@@ -45,6 +45,9 @@ const actions = {
     commit(SET_WALLET_ACCOUNT, null);
     commit(SET_WALLET_NAME, null);
     commit(SET_WALLET_CHAIN_ID, null);
+  },
+  [SET_CHAIN_ID]({ commit }, params) {
+    commit(SET_WALLET_CHAIN_ID, params.chainId);
   }
 };
 

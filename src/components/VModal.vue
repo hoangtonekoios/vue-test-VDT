@@ -1,7 +1,11 @@
 <template>
   <div v-if="visible" class="base-modal">
     <div class="base-modal-box">
-      <i class="ion-close base-modal__icon-close" @click="close()"></i>
+      <i
+        v-if="showClose"
+        class="ion-close base-modal__icon-close"
+        @click="close()"
+      ></i>
       <div class="base-modal__header">
         {{ title }}
       </div>
@@ -22,6 +26,10 @@ export default {
     title: {
       type: String,
       default: ""
+    },
+    showClose: {
+      type: Boolean,
+      default: true
     }
   },
   methods: {
@@ -68,5 +76,6 @@ export default {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  cursor: pointer;
 }
 </style>

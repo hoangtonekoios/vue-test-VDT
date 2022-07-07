@@ -22,3 +22,4 @@ export const REGISTER = "register";
 export const UPDATE_USER = "updateUser";
 export const SET_WALLET = "setWallet";
 export const DISCONNECT_WALLET = "disconnectWallet";
+export const SET_CHAIN_ID = "setChainID";
